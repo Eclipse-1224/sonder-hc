@@ -1,0 +1,19 @@
+body {
+    font-family: "Roboto", sans-serif !important;
+    background-color: Canvas !important;
+    color: CanvasText !important;
+    color-scheme: light dark !important;
+
+}
+.member-listing {
+    h1{
+        font-weight: bolder;
+        text-align: center;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+    h2 {
+        text-align: center;
+        padding-bottom: 3%;
+    }
+}

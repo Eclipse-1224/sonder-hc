@@ -1,0 +1,65 @@
+.character-card {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1);
+    padding: 20px;
+    text-align: center;
+    min-height: 250px;
+
+
+}
+
+.card .card-image{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.character-details{
+    margin: 0;
+    color: hsl(0,0,20%);
+    h3 {
+        font-size: 2.5rem;
+        a{
+            text-decoration: none;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            margin-left: 25px;
+        }
+    }
+}
+
+.description {
+    color: hsl(0,0,30%);
+    padding-top: 25px;
+    font-size: 2rem;
+
+
+}
+.Warrior{
+    color: #C69B6D;
+}
+.Warlock{
+    color: #8788EE;
+}
+.Druid{
+    color: #FF7C0A;
+}
+.Hunter{
+    color:#AAD372;
+}
+.Mage{
+    color: #3FC7EB;
+}
+.Paladin{
+    color: #F48CBA;
+}
+.Priest{
+    color: 	#FFFFFF;
+}
+.Rogue{
+    color: #FFF468;
+}
