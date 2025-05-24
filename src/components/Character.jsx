@@ -15,11 +15,9 @@ function Character(member) {
     deadCheck=deadCheck.toString();
   }
 
-  if (member.rank !=3 && member.rank !=1 && member.character.is_ghost) {
-    return "";
-  } else {
-    return (
-      <div className={`character-card col-sm-4 ${member.character.class}`}>
+  if (member.rank ==2 || member.rank == 0) {
+    return(       
+    <div className={`character-card col-sm-4 ${member.character.class}`}>
         <div className="character-details">
           <h3>
             <a href={`${member.character.profile_url}`} target="_blank">
@@ -42,6 +40,9 @@ function Character(member) {
         </div>
       </div>
     );
+  } else {
+    return ""
+
   }
 }
 export default Character;

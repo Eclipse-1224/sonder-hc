@@ -26,7 +26,8 @@ function App() {
   }, []);
   members.forEach(totalLevels)
   function totalLevels(item) {
-    if(!item.character.is_ghost && item.rank !=1 && item.rank !=3){
+    if(item.rank ==2 || item.rank == 0){
+      console.log(item.character.name)
       guildLevel = guildLevel+item.character.level
     }
   }
