@@ -40,8 +40,26 @@ function Character(member) {
         </div>
       </div>
     );
-  } else {
-    return ""
+  } else if (member.character.is_ghost) {
+    return (
+          <div className={`character-card col-sm-4 ${member.character.class}`}>
+        <div className="character-details">
+          <h3>
+            <a href={`${member.character.profile_url}`} target="_blank">
+              {member.character.name}
+            </a>💀
+            <img src={memberRace}/>
+            <img src={memberClass}/>
+          </h3>
+          <p className="description">
+            {" "}
+            Level {member.character.level} {member.character.race}{" "}
+            {member.character.class} <br/>
+          </p>
+            <p className="is-dead">Died on: {dateString} <br/><b>Does not count towards total guild levels!</b></p>
+        </div>
+      </div>
+    )
 
   }
 }
