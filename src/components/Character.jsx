@@ -15,7 +15,7 @@ function Character(member) {
     deadCheck=deadCheck.toString();
   }
 
-  if (member.rank !=4 && member.rank !=1 && member.character.is_ghost) {
+  if (member.rank !=3 && member.rank !=1 && member.character.is_ghost) {
     return "";
   } else {
     return (
