@@ -14,7 +14,11 @@ function App() {
     const loadSonderMember = async () => {
       try {
         const sonderMembers = await getSonderMembers();
-        setMembers(sonderMembers);
+        
+        const sortedMembers = sonderMembers.sort((a,b) => {
+          return  b.character.level- a.character.level 
+        });
+        setMembers(sortedMembers);
       } catch (err) {
         console.log(err);
         setError("Failed to get member list from guild");
@@ -27,7 +31,6 @@ function App() {
   members.forEach(totalLevels)
   function totalLevels(item) {
     if(item.rank ==2 || item.rank == 0){
-      console.log(item.character.name)
       guildLevel = guildLevel+item.character.level
     }
   }
