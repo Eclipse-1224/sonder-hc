@@ -39,6 +39,7 @@ function App() {
     <div className="container">
       <div className="member-listing row">
         <h1>Sonder Hardcore Leveling Roster</h1>
+        <h3 className="level-requirements">You must be &gt; Level 10 to show up.</h3>
         <h2>Total Guild Level: {guildLevel}</h2>
         {members.map((member) => (
           <>
