@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="container">
       <div className="member-listing row">
-        <h1>Sonder Hardcore Member EKG</h1>
+        <h1>Sonder Hardcore Leveling Roster</h1>
         <h2>Total Guild Level: {guildLevel}</h2>
         {members.map((member) => (
           <>
