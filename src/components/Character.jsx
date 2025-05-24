@@ -2,8 +2,8 @@ import '../css/Character.css'
 function Character(member) {
   member = member.member;
   var deadCheck = false;
-  const memberClass = '../../'+member.character.class+'.webp'
-  const memberRace = '../../'+member.character.race+'-'+member.character.gender+'.webp'
+  const memberClass = '../../sonder-hc/'+member.character.class+'.webp'
+  const memberRace = '../../sonder-hc/'+member.character.race+'-'+member.character.gender+'.webp'
   if (member.character.is_ghost) {
     var date = new Date(member.character.ghosted_at);
     var dateString = date.toLocaleString("en-US", {
