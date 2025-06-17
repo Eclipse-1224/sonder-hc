@@ -15,7 +15,7 @@ function Character(member) {
     deadCheck=deadCheck.toString();
   }
 
-  if (member.rank ==2 || member.rank == 0) {
+  if (member.rank ==2 || member.rank == 0 || member.rank == 3) {
     return(       
     <div className={`character-card col-sm-4 ${member.character.class}`}>
         <div className="character-details">

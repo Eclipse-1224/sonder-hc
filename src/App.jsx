@@ -30,7 +30,7 @@ function App() {
   }, []);
   members.forEach(totalLevels)
   function totalLevels(item) {
-    if(item.rank ==2 || item.rank == 0){
+    if(item.rank ==2 || item.rank == 0 || item.rank == 3){
       guildLevel = guildLevel+item.character.level
     }
   }
